@@ -1,0 +1,523 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #5210ec; /*  clean background */
+    color: #aa1111; /* Darker text for readability */
+    line-height: 1.6;
+    justify-content: baseline;
+}
+
+header {
+    background: linear-gradient(135deg, #c0c3c7, #b595e9); /* Gradient header */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    float: right; /* Floats the logo to the right */
+}
+
+nav {
+    background: #e9ecef; /* Light grey navigation */
+    display: flex;
+    justify-content: baseline;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    padding: 20px 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d1d5db; /* Slightly darker grey on hover */
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+
+.hero {
+    background: linear-gradient(to right, rgba(0, 123, 255, 0.1), rgba(102, 16, 242, 0.1));
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40; /* Darker footer */
+    color: white;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackForm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#feedbackForm label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-inline-end: 20px;
+}
+
+#feedbackForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#feedbackForm button:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+nav a {
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #d1d5db;
+  }
+  /* Buttons for Login & Sign Up */
+  .auth-buttons {
+    position:initial;
+    right: 10px;
+    Bottom: 10px;
+    -moz-box-align: center;
+  }
+  .auth-buttons button {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .auth-buttons button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  /* Sections */
+  section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  section h2 {
+    color: #1470d3;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  .hero {
+    background: linear-gradient(to right, rgba(0, 123, 255, 0.1), rgba(102, 16, 242, 0.1));
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #555;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  /* Modal Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+  }
+  .close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: #000;
+  }
+  .modal h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #007bff;
+  }
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  .modal form input[type="text"],
+  .modal form input[type="email"],
+  .modal form input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .modal form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .modal form button:hover {
+    background-color: #0056b3;
+  }
+  .signup-options {
+    margin: 15px 0;
+    text-align: center;
+  }
+  .signup-options button {
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .signup-options button.facebook {
+    background-color: #3b5998;
+  }
+
+  .department-details {
+    display: none; /* Initially hide the detail sections */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.department-details h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#Departments ul li a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+#Departments ul li a:hover{
+    text-decoration: underline;
+}
+
+#Departments ul li {
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.team-member p {
+    color: #555;
+    font-size: 14px;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    position: baseline;
+    margin: 35px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-flex;
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #74c0fc; /* Light blue hover effect */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: row;
+    }
+}
+
+
+
+
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }

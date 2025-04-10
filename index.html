@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <class="header-logo" />
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#appointments">Appointments</a>
+        <a href="#Applications">Applications</a>
+        <a href="#Health Staffs">Health Staffs</a>
+        <a href="#contact">Contact</a>
+        
+    </nav>
+
+    <nav>
+    <title>Lodwar County Refferal Hospital</title>
+    </nav>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10;
+            padding: 100;
+            background-color: #4e63c0d2;
+        }
+
+        header{
+            background-color: #8422c5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+          
+    
+        nav {
+            background-color: #ece4e4;
+            padding: 5px;
+            text-align: end;
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #a58f8f;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 100px;
+            position:relative;
+            bottom:0;
+            width:100%;
+
+        }
+
+        .department-list {
+          list-style-type: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        .department-item {
+          width: 30%;
+          margin-bottom: 20px;
+          border: 1px solid #7c2323;
+          padding: 15px;
+          text-align: center;
+          box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <header>
+            <header class="header">
+                <img src="images/turkana_logo.png" alt="Turkana Logo" class="logo left">
+                <h1 class="title"><h1>Lodwar County Refferal Hospital</h1></br>
+                <p>Your Health, Our Priority in Turkana County</p>
+                <img src="images/kenya_logo.png" alt="Kenya Coat of Arms" class="logo right">
+            </header>
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search...">
+                <button type="submit">Search</button>
+              </form>
+
+            <style>
+                .header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                    background-color: #115191;
+                    text-align: center;
+                    position: relative;
+                }
+        
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                    border-radius:50%;
+                    align-self: baseline;
+                }
+                
+          
+             
+                .title {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+            </style>
+    
+
+    
+    <section id="home">
+        
+        <h2>Welcome to Lodwar County Referral Hospital (LCRH)</h2>
+        <p>The Lodwar County Referral Hospital plays a vital role in the healthcare system of Turkana County, </br>offering services that address a range of medical needs from primary care to specialized interventions.</br>The hospital also works to serve the underserved population in the region, ensuring access to healthcare</br>in one of Kenya's more remote areas.</p>
+        
+<head>
+<style>
+/* CSS Styling (same as before) */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="images/Emergency.jpg">
+  </div>
+  <div class="slide fade">
+    <img src="images/LCRH.jpg">
+  </div>
+  <div class="slide fade">
+    <img src="images/LCRH2.jpg">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+// JavaScript Functionality (same as before)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = documentgetElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// Optional: Automatic Slideshow
+setInterval(function(){
+  plusSlides(1);
+}, 2000); // Change image every 2 seconds
+</script>
+
+    </section>
+
+    <section id="departments">
+        <h2>Our Departments</h2>
+
+        <ul class="department-list">
+            <li class="department-item">Cardiology</li>
+            <li class="department-item">Neurology</li>
+            <li class="department-item">Pediatrics</li>
+            <li class="department-item">Orthopedics</li>
+            <li class="department-item">Emergency</li>
+            <li class="department-item">Maternity and Obstetries</li>
+            <li class="department-item">Radiology/Imaging</li>
+            <li class="department-item">Laboratory Services</li>
+            <li class="department-item">Outpatients</li>
+            <li class="department-item"> Surgical</li>
+            <li class="department-item">Internal Medicine</li>
+            <li class="department-item">Pharmacy</li>
+            <li class="department-item">Dental Sevices</li>
+            <li class="department-item">Physiotherapy</li>
+            <li class="department-item">Mental Health Service</li>
+            <li class="department-item">Public Service and Disposes</li>
+            <li class="department-item">Surveillance</li>
+            <li class="department-item">TB and Leprosy</li>
+            <li class="department-item">Dialysis Unit</li>
+           
+        </ul>
+    </section>
+
+    <section id="appointments">
+        <h3>Make an Appointment</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="department">Department:</label><br>
+            <select id="department" name="department">
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <opti value="emergency">Emergency</option>
+                <optionon value="pediatrics">Pediatrics</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="maternity">Maternity</option>
+                <option value="radiology">Raiology/Imaging</option>
+                <option value="laboratory">Laboratory</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Dental Services">Dental Services</option>
+                <opti value="Physiotherapy">Physiotherapy</option>
+                <optionon value="Mental Health Service">Mental Health Service</option>
+                <option value="Public Service and Disposes">Public Service and Disposes</option>
+                <option value="Surveillance">Surveillance</option>
+                <option value="TB and Leprosy">TB and Leprosy</option>
+                <option value="Dialysis Unit">Dialysis Unit</option>
+                <option value="CT Scan">CT Scan</option>
+            </select><br><br>
+         <input type="submit" value="Submit">
+        </form>
+    </section>
+      <table>
+    <section id="Applications">
+    <h4>Applications</h4>
+    <form>
+        <p>Select the type of application:</p>
+      
+        <label for="intern">Internship:</label>
+        <input type="checkbox" id="intern" name="applicationType" value="intern"><br><br>
+      
+        <label for="attachee">Attachment:</label>
+        <input type="checkbox" id="attachee" name="applicationType" value="attachee"><br><br>
+      
+        <label for="volunteer">Volunteer:</label>
+        <input type="checkbox" id="volunteer" name="applicationType" value="volunteer"><br><br>
+      
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+      
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+      
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+      
+        <label for="resume">Upload Resume/CV:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+      
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      
+        <input type="submit" value="Submit Application">
+      </form>
+      </section>
+    </table>
+
+    <section id="Board members">
+        
+        <div class="container">
+            <h2>Board Members</h2>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="images/dr. michael_eregae.JPG" alt="Dr. Michael Eregae">
+                    <h3>Dr. Michael Eregae</h3>
+                    <p>County Executive Committee Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/Jame_ilikwel.JPG" alt="turkana_logo">
+                    <h3>James Illikwel</h3>
+                    <p>Chief Officer - Finance</p>
+                </div>
+                <div class="team-member">
+                    <img src=Images/samuel_ekaale.jpg width="288px" height="293" alt="chief officer">
+                    <h3>Samwel Ekaale Ekitela</h3>
+                    <p>Chief Officer - Economic Planning</p>
+                </div>
+                <div class="team-member">
+                    <img src=Images/isaac_eregae.jpg width="288px" height="293" alt="Director ICT, Turkana County">
+                    <h3>Isaac Eregae</h3>
+                    <p>Director - ICT,Turkana County</p>
+                </div>
+                <div class="team-member">
+                    <img src=Images/richard_mzungu.jpg width="288px" height="293" alt="Director ICT, Turkana County">
+                    <h3>DP Richard Mzungu</h3>
+                    <p>Deputy Director - ICT,Turkana County</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <style>
+      
+
+         
+    </style>
+</section> 
+    <Section id="Health Staffs">
+
+        <h5>Healh Staff</h5>
+        <nav>
+            <a href="Log In">Log In</a></br>
+            <a href="Sign up">Sign Up</a>
+            <style>
+                nav b{
+                    text-align: center;
+                }
+            </style>
+             </nav>
+
+        </Section>
+      <section id="contact">
+        <h5>Contact Us</h5>
+        <p>Address: PO.BOX 18-30500,Lodwar, Turkana County, Kenya</p>
+        <p>Phone: 0741333335</p>
+        <p>Email: info@lcrh.com</p>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- About LCRH Turkana -->
+            <div class="footer-section">
+                <h3>ABOUT LCRH TURKANA</h3>
+                <p>Lodwar County Referral Hospital (LCRH) is the largest and most advanced public health facility in Turkana County, located in Lodwar Town, the county headquarters. As a Level 5 referral hospital, LCRH serves as the primary center for specialized healthcare in the region, catering to patients from across Turkana and neighboring counties, including parts of West Pokot and Samburu, as well as cross-border communities from South Sudan and Ethiopia.</p>
+            </div>
+    
+            <!-- Address -->
+            <div class="footer-section">
+                <h3>ADDRESS</h3>
+                <p>Ministry of Health ,LCRH<br>
+                    P.O. Box 18-30500, Lodwar, Kenya<br>
+                    Email: <a href="mailto:info@turkana.go.ke">info@turkana.go.ke</a><br>
+                    FLLoCA Grievance Redress Mechanism Focal Person<br>
+                    Phone No: <a href="tel:+254702224066">+254 702 224 066</a>
+                </p>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- External Links -->
+            <div class="footer-section">
+                <h3>EXTERNAL LINKS</h3>
+                <ul>
+                    <li><a href="#">📧 Staff Emails</a></li>
+                    <li><a href="#">🌍 Ghris</a></li>
+                    <li><a href="#">🏠 County Assembly of Turkana</a></li>
+                    <li><a href="#">🏡 Invest in Turkana</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2025 Lodwar County Reffaral Hospital. All Rights Reserved. | Developed by <strong>Ben Ejore Kiptoo</strong></p>
+        </div>
+    </footer>
+
+        <a href="https://lcrh.com/">Link to LCRH</a>
+
+    </footer>
+      
+    <!-- Link the external JS file -->
+</script>
+</body>
+</html>  
